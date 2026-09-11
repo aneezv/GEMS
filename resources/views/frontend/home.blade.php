@@ -985,7 +985,7 @@
 
                                         <div class="mobile-content-card">
                                             <span class="mobile-subheading">Best Child Development Center In Kerala</span>
-                                            <h1 class="hero-title">About Us</h1>
+                                            <h2 class="hero-title">About Us</h2>
                                             <p class="hero-description">
                                                 Our center is designed to be a safe, caring, and hopeful environment where every
                                                 child's unique potential is recognized and nurtured.
@@ -1078,7 +1078,7 @@
 
                                         <div class="mobile-content-card">
                                             <span class="mobile-subheading">Comprehensive Expert Guidance</span>
-                                            <h1 class="hero-title">Join Our Family</h1>
+                                            <h2 class="hero-title">Join Our Family</h2>
                                             <p class="hero-description">
                                                 Join over 1000 families who trust our certified therapists for holistic
                                                 developmental care and specialized support.
@@ -1090,11 +1090,11 @@
 
                                     {{-- Desktop layout --}}
                                     <div class="hidden lg:block">
-                                        <h1 class="hero-title text-5xl lg:text-7xl mb-8 text-custom-lime">
+                                        <h2 class="hero-title text-5xl lg:text-7xl mb-8 text-custom-lime">
                                             Empowering<br>
                                             Potential with<br>
                                             Expert Guidance
-                                        </h1>
+                                        </h2>
 
                                         <p
                                             class="hero-description text-gray-600 text-lg lg:text-xl leading-relaxed mb-10 max-w-lg">
@@ -1160,7 +1160,7 @@
 
                                         <div class="mobile-content-card">
                                             <span class="mobile-subheading">Supporting Every Step</span>
-                                            <h1 class="hero-title">Our Services</h1>
+                                            <h2 class="hero-title">Our Services</h2>
                                             <p class="hero-description">
                                                 From early intervention to specialized therapies, we walk alongside families at
                                                 every stage of development.
@@ -1172,11 +1172,11 @@
 
                                     {{-- Desktop layout --}}
                                     <div class="hidden lg:block">
-                                        <h1 class="hero-title text-5xl lg:text-7xl mb-8 text-custom-coral">
+                                        <h2 class="hero-title text-5xl lg:text-7xl mb-8 text-custom-coral">
                                             Supporting Every<br>
                                             Child's Growth<br>
                                             Journey
-                                        </h1>
+                                        </h2>
 
                                         <p
                                             class="hero-description text-gray-600 text-lg lg:text-xl leading-relaxed mb-10 max-w-lg">
