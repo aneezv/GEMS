@@ -14,6 +14,7 @@
     <meta name="keywords"
         content="child development, autism therapy, speech therapy, occupational therapy, special education, Kerala, Kochi">
     <meta name="author" content="GEMS Child Development Centre">
+    <link rel="canonical" href="@yield('canonical', url()->current())">
 
     {{-- Open Graph --}}
     <meta property="og:title" content="@yield('og_title', 'GEMS  | Best Child Development Centre in Kerala')">
