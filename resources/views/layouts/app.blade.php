@@ -30,6 +30,66 @@
     <meta name="twitter:title" content="@yield('title', 'GEMS | Best Child Development Centre in Kerala')">
     <meta name="twitter:description" content="Kerala's premier child development center with 10+ years of experience.">
 
+    {{-- Structured Data (Schema.org / Google Rich Results) --}}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "{{ url('/') }}#clinic",
+      "name": "GEMS Child Development Centre",
+      "alternateName": "GEMS CDC",
+      "url": "{{ url('/') }}",
+      "logo": "{{ asset('images/Logo.png') }}",
+      "image": "{{ asset('images/image9.jpg') }}",
+      "description": "Premier child development centre in Kozhikode, Kerala providing specialized pediatric therapies, autism support, speech therapy, occupational therapy, and special education.",
+      "telephone": "+917994502501",
+      "email": "gemsrehab@gmail.com",
+      "priceRange": "$$",
+      "isAcceptingNewPatients": "True",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pallipatu Ayyapa Temple Road, Civil Station",
+        "addressLocality": "Kozhikode",
+        "addressRegion": "Kerala",
+        "postalCode": "673020",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 11.287588,
+        "longitude": 75.790630
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Kozhikode"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Kerala"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/share/1CpQzb7gie/?mibextid=wwXIfr",
+        "https://www.instagram.com/gemscdc?igsh=MXc2MmplZHR1aG1yNQ%3D%3D&utm_source=qr"
+      ],
+      "medicalSpecialty": [
+        "Pediatrics",
+        "SpeechTherapy",
+        "OccupationalTherapy",
+        "Psychology"
+      ]
+    }
+    </script>
+
     {{-- Favicon & Apple Touch Icons --}}
     <link rel="icon" type="image/x-icon" href="{{ asset('images/Logo.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/Logo.png') }}">
