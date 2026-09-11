@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Blog | GEMS')
+@section('meta_description', 'Read expert insights on child development, parenting tips, speech milestones, and sensory wellness from the therapeutic specialists at GEMS Kozhikode, Kerala.')
 
 @section('content')
     {{-- ================= HERO SECTION ================= --}}

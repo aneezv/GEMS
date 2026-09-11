@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Training Programs | GEMS')
+@section('meta_description', 'Empower your skills with GEMS training programs in Kozhikode, Kerala: comprehensive courses for parents, educators, and shadow teachers in child development.')
 
 @section('content')
 

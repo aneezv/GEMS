@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('meta_description', "GEMS Child Development Centre in Kozhikode, Kerala offers expert pediatric therapies, autism support, speech therapy, and holistic care for your child.")
+
 @section('content')
 
         {{-- ================= HERO SECTION ================= --}}

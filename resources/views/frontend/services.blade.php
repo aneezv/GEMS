@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Our Services | GEMS')
+@section('meta_description', 'Explore specialized pediatric therapy services at GEMS Kozhikode, Kerala: Speech Therapy, Occupational Therapy, Behavioral Therapy, and Special Education.')
 
 @section('content')
 

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Contact Us | GEMS')
+@section('meta_description', 'Get in touch with GEMS Child Development Centre in Kozhikode, Kerala. Book a consultation, visit our clinic, or speak directly with our pediatric care team.')
 
 @section('content')
     {{-- ================= HERO SECTION ================= --}}

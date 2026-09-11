@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Our Team | GEMS Child Development Centre')
+@section('meta_description', 'Meet the certified pediatric specialists and developmental therapists at GEMS Kozhikode, Kerala dedicated to guiding children with personalized care plans.')
 
 @section('content')
     {{-- HERO SECTION --}}

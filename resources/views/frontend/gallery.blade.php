@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Gallery | GEMS')
+@section('meta_description', 'Take a look inside GEMS Child Development Centre in Kozhikode, Kerala. Browse photos of our modern therapy facilities, sensory rooms, and child milestones.')
 
 @section('content')
     {{-- ================= HERO SECTION ================= --}}
