@@ -173,8 +173,12 @@
                         </div>
                         <div>
                             <p class="text-white font-medium">Call Us</p>
+                            <a href="tel:+917994502501"
+                                class="text-gray-400 text-sm hover:text-[#32A8B8] transition-colors block">
+                                +91 7994502501
+                            </a>
                             <a href="tel:+918086497941"
-                                class="text-gray-400 text-sm hover:text-[#32A8B8] transition-colors">
+                                class="text-gray-400 text-sm hover:text-[#32A8B8] transition-colors block">
                                 +91 8086497941
                             </a>
                         </div>

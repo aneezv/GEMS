@@ -33,7 +33,7 @@
     {{-- Structured Data (Schema.org / Google Rich Results) --}}
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+      "@@context": "https://schema.org",
       "@type": ["MedicalClinic", "LocalBusiness"],
       "@id": "{{ url('/') }}#clinic",
       "name": "GEMS Child Development Centre",

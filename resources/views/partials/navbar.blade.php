@@ -39,7 +39,7 @@
 
             {{-- DESKTOP CONTACT BUTTONS --}}
             <div class="hidden lg:flex items-center gap-3">
-                <a href="tel:+918086497941"
+                <a href="tel:+917994502501"
                     class="flex items-center gap-2 bg-gray-50 hover:bg-gray-100 px-4 py-2 rounded-lg transition-colors duration-200 group">
                     <div class="w-8 h-8 rounded-full bg-[#97B41A] flex items-center justify-center">
                         <span class="text-white text-sm">📞</span>
@@ -115,7 +115,7 @@
                         </div>
                         <div>
                             <p class="text-sm text-gray-600">Emergency Helpline</p>
-                            <a href="tel:+918086497941"
+                            <a href="tel:+917994502501"
                                 class="text-base font-bold text-gray-900 hover:text-[#32A8B8] transition-colors">
                                 +91 7994502501
                             </a>
