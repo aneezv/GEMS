@@ -37,6 +37,18 @@ Route::get('/sitemap.xml', function () {
         ->header('Content-Type', 'text/xml');
 })->name('sitemap');
 
+// SEO Robots.txt
+Route::get('/robots.txt', function () {
+    $robots = "User-agent: *\n"
+        . "Allow: /\n"
+        . "Disallow: /admin/\n"
+        . "Disallow: /login\n\n"
+        . "Sitemap: " . url('/sitemap.xml') . "\n";
+
+    return response($robots, 200)
+        ->header('Content-Type', 'text/plain');
+})->name('robots');
+
 // Authentication Routes
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
