@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="px-6 pt-12 flex-grow flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#32A8B8]" style="font-family: 'Fredoka', sans-serif;">Psychological Assessment</h3>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#32A8B8]" style="font-family: 'Fredoka', sans-serif;">Psychological Assessment</h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6 font-medium transition-colors duration-300 group-hover:text-gray-600">
                         Understanding your child’s unique mind.<br><br>Our expert child psychologists conduct professional IQ tests, comprehensive learning evaluations, and personality assessments. As a leading child development centre, we craft personalised support plans to help every student reach their full potential.
                     </p>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="px-6 pt-12 flex-grow flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#97B41A]" style="font-family: 'Fredoka', sans-serif;">Behaviour Therapy</h3>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#97B41A]" style="font-family: 'Fredoka', sans-serif;">Behaviour Therapy</h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6 font-medium transition-colors duration-300 group-hover:text-gray-600">
                         Better skills for a happier life.<br><br>We provide the best behaviour therapy to improve cognitive, social, and emotional skills. Our ABA therapy and evidence-based methods ensure that every child receives the best autism support.
                     </p>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="px-6 pt-12 flex-grow flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#32A8B8]" style="font-family: 'Fredoka', sans-serif;">Speech Therapy</h3>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#32A8B8]" style="font-family: 'Fredoka', sans-serif;">Speech Therapy</h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6 font-medium transition-colors duration-300 group-hover:text-gray-600">
                         Helping every child find their voice.<br><br>We offer the best speech therapy to improve speech clarity, language development, and social interaction. Our paediatric therapy team ensures that "every voice matters."
                     </p>
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div class="px-6 pt-12 flex-grow flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#97B41A]" style="font-family: 'Fredoka', sans-serif;">Occupational Therapy</h3>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#97B41A]" style="font-family: 'Fredoka', sans-serif;">Occupational Therapy</h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6 font-medium transition-colors duration-300 group-hover:text-gray-600">
                         Building independence for daily life.<br><br>Our occupational therapy focuses on building independence. We help children improve motor skills and sensory processing. This vital paediatric therapy helps children perform daily tasks such as writing, playing, and self-care with confidence.
                     </p>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div class="px-6 pt-12 flex-grow flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#EA6F71]" style="font-family: 'Fredoka', sans-serif;">Special Education</h3>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#EA6F71]" style="font-family: 'Fredoka', sans-serif;">Special Education</h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6 font-medium transition-colors duration-300 group-hover:text-gray-600">
                         Making learning easy and fun.<br><br>At our child development centre, we unlock learning potential. We support children with reading, writing, and math difficulties through Individualised Education Plans (IEPs) and multisensory teaching tools, ensuring no child is left behind.
                     </p>
@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <div class="px-6 pt-12 flex-grow flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#E99D1D]" style="font-family: 'Fredoka', sans-serif;">Counselling & Psychotherapy</h3>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 transition-colors duration-300 group-hover:text-[#E99D1D]" style="font-family: 'Fredoka', sans-serif;">Counselling & Psychotherapy</h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-6 font-medium transition-colors duration-300 group-hover:text-gray-600">
                         Caring for mental health.<br><br>Our expert team offers child counselling and psychotherapy for anxiety, depression, personality disorders, relationship issues, low confidence, and emotional hurdles, helping them build resilience and achieve overall well-being.
                     </p>

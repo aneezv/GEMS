@@ -19,7 +19,7 @@
 
             <div class="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center mt-2 sm:mt-0">
                 <div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">Subscribe to Our Newsletter</h3>
+                    <p class="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">Subscribe to Our Newsletter</p>
                     <p class="text-gray-300 text-sm sm:text-base">Get the latest updates on child development, parenting tips, and center
                         news.</p>
                 </div>
@@ -98,7 +98,7 @@
 
             {{-- Quick Links --}}
             <div data-aos="fade-up" data-aos-delay="200">
-                <h4 class="text-white font-bold text-lg mb-6 pb-2 border-b border-gray-700">Quick Links</h4>
+                <p class="text-white font-bold text-lg mb-6 pb-2 border-b border-gray-700">Quick Links</p>
                 <ul class="space-y-3">
                     @php
                         $quickLinks = [
@@ -130,7 +130,7 @@
 
             {{-- Services --}}
             <div data-aos="fade-up" data-aos-delay="300">
-                <h4 class="text-white font-bold text-lg mb-6 pb-2 border-b border-gray-700">Our Services</h4>
+                <p class="text-white font-bold text-lg mb-6 pb-2 border-b border-gray-700">Our Services</p>
                 <ul class="space-y-3">
                     @php
                         $services = [
@@ -154,7 +154,7 @@
 
             {{-- Contact Info --}}
             <div data-aos="fade-up" data-aos-delay="400">
-                <h4 class="text-white font-bold text-lg mb-6 pb-2 border-b border-gray-700">Contact Info</h4>
+                <p class="text-white font-bold text-lg mb-6 pb-2 border-b border-gray-700">Contact Info</p>
                 <ul class="space-y-4">
                     <li class="flex items-start gap-3">
                         <div class="w-8 h-8 rounded-full bg-[#32A8B833] flex items-center justify-center flex-shrink-0">

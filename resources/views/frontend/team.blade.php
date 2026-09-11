@@ -104,7 +104,7 @@
                             </div>
                         </div>
                         <div class="text-center space-y-2">
-                            <h4 class="text-xl font-bold text-gray-900 uppercase">Narmada Soman</h4>
+                            <h3 class="text-xl font-bold text-gray-900 uppercase">Narmada Soman</h3>
                             <p class="text-[#32A8B8] text-sm font-bold uppercase tracking-wide">Psychologist</p>
                             <div class="pt-2">
                                 <span
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                         <div class="text-center space-y-2">
-                            <h4 class="text-xl font-bold text-gray-900 uppercase">Manjima K.</h4>
+                            <h3 class="text-xl font-bold text-gray-900 uppercase">Manjima K.</h3>
                             <p class="text-[#EA6F71] text-sm font-bold uppercase tracking-wide">Speech Language Pathologist</p>
                             <div class="pt-2">
                                 <span
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                         <div class="text-center space-y-2">
-                            <h4 class="text-xl font-bold text-gray-900 uppercase">Prarthana.P P</h4>
+                            <h3 class="text-xl font-bold text-gray-900 uppercase">Prarthana.P P</h3>
                             <p class="text-[#E99D1D] text-sm font-bold uppercase tracking-wide">Psychologist</p>
                             <div class="pt-2">
                                 <span
@@ -173,7 +173,7 @@
                             </div>
                         </div>
                         <div class="text-center space-y-2">
-                            <h4 class="text-xl font-bold text-gray-900 uppercase">Malavika K.</h4>
+                            <h3 class="text-xl font-bold text-gray-900 uppercase">Malavika K.</h3>
                             <p class="text-[#97B41A] text-sm font-bold uppercase tracking-wide">Special Educator</p>
                             <div class="pt-2">
                                 <span
@@ -196,7 +196,7 @@
                             </div>
                         </div>
                         <div class="text-center space-y-2">
-                            <h4 class="text-xl font-bold text-gray-900 uppercase">Thara Ranveendran</h4>
+                            <h3 class="text-xl font-bold text-gray-900 uppercase">Thara Ranveendran</h3>
                             <p class="text-[#32A8B8] text-sm font-bold uppercase tracking-wide">Coordinator</p>
                             <div class="pt-2">
                                 <span

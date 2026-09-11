@@ -313,7 +313,7 @@
                         </div>
                     </div>
                     <div class="mt-6">
-                        <h3 class="text-2xl font-bold text-gray-900">Mushtaq</h3>
+                        <p class="text-2xl font-bold text-gray-900">Mushtaq</p>
                         <p class="text-[#32A8B8] font-medium text-lg">Founder & Director</p>
                     </div>
                 </div>

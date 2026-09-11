@@ -229,7 +229,7 @@
                     <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full"></div>
                     <div>
                         <span class="text-sm font-bold uppercase tracking-widest text-rose-100 block mb-2">Join Us</span>
-                        <h3 class="text-2xl sm:text-3xl font-extrabold mb-4" style="font-family: 'Fredoka', sans-serif;">Request Admission</h3>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold mb-4" style="font-family: 'Fredoka', sans-serif;">Request Admission</h2>
                         <p class="text-rose-50/95 text-sm leading-relaxed mb-6 font-medium">
                             Ready to upskill or seek help? Fill out this quick inquiry, and let’s start.
                         </p>
