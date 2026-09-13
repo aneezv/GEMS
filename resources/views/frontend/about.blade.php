@@ -306,7 +306,7 @@
             <div class="flex flex-col lg:flex-row gap-12 items-center">
                 <div class="lg:w-1/3 text-center lg:text-left" data-aos="fade-right">
                     <div class="relative inline-block">
-                        <img src="{{ asset('images/image2.jpg') }}" alt="Mushtaq - Founder of GEMS Child Development Centre"
+                        <img src="{{ asset('images/Mushthaq.P.PNG') }}" alt="Mushtaq - Founder of GEMS Child Development Centre"
                             class="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-full border-8 border-white shadow-2xl">
                         <div class="absolute bottom-4 right-4 bg-[#32A8B8] text-white p-3 rounded-full shadow-lg">
                             <span class="text-2xl">❝</span>
