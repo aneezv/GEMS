@@ -18,6 +18,7 @@ Route::get('/career', [PageController::class, 'career'])->name('career');
 Route::get('/team', [PageController::class, 'team'])->name('team');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/terms', [PageController::class, 'terms'])->name('terms');
+Route::get('/privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy');
 Route::post('/contact', [PageController::class, 'storeContact'])->name('contact.store');
 
 // SEO Sitemap

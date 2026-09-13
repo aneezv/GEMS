@@ -58,6 +58,11 @@ class PageController extends Controller
         return view('frontend.terms');
     }
 
+    public function privacyPolicy()
+    {
+        return view('frontend.privacy');
+    }
+
     public function storeContact(Request $request)
     {
         $validated = $request->validate([
