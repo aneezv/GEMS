@@ -95,7 +95,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/Logo.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/Logo.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/Logo.png') }}">
-    <link rel="manifest" href="{{ asset('images/Logo.png') }}">
 
     {{-- Preload critical assets --}}
     <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
@@ -480,15 +479,6 @@
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
-            });
-        }
-
-        // Service worker registration for PWA (optional)
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').catch(error => {
-                    console.log('Service Worker registration failed:', error);
-                });
             });
         }
     </script>
