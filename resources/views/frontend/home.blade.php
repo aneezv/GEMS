@@ -2572,7 +2572,7 @@
                         {{-- Graphic Mask Circle Background --}}
                         <div class="absolute bottom-0 right-0 w-[350px] h-[350px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full translate-y-[20%] translate-x-[10%] transition-transform duration-700 hover:scale-105 overflow-hidden"
                             style="background-color: rgba(255,255,255,0.15);">
-                            <img src="{{ asset('images/image1.jpg') }}" alt="Student"
+                            <img src="{{ asset('images/image1.jpg') }}" alt="Child participating in special education activities at GEMS CDC"
                                 class="w-full h-full object-cover opacity-90 transition-all duration-700 mix-blend-overlay hover:mix-blend-normal hover:opacity-100">
                         </div>
 

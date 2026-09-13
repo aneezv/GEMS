@@ -47,7 +47,7 @@
             {{-- Brand & Description --}}
             <div class="lg:col-span-2" data-aos="fade-up" data-aos-delay="100">
                 <div class="flex items-center gap-3 mb-6">
-                    <img src="{{ asset('images/Logo.png') }}" alt="AIMS CDC Logo" class="h-20 w-auto">
+                    <img src="{{ asset('images/Logo.png') }}" alt="GEMS Child Development Centre Logo" class="h-20 w-auto">
                 </div>
                 <p class="text-gray-300 leading-relaxed mb-6 max-w-lg">
                     Kerala's premier child development center providing comprehensive therapies,
