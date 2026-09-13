@@ -982,7 +982,7 @@
                                     <div class="lg:hidden flex flex-col items-center">
                                         <div class="mobile-hero-image-container">
                                             <div class="mobile-organic-circle">
-                                                <img src="{{ asset('images/image9.jpg') }}" alt="Wellness">
+                                                <img src="{{ asset('images/image9.jpg') }}" alt="Wellness" fetchpriority="high">
                                             </div>
                                         </div>
 
@@ -1021,7 +1021,7 @@
                                 <div class="organic-shape-container hidden lg:block">
                                     <div class="organic-image-mask">
                                         <img src="{{ asset('images/image7.jpg') }}" class="w-full h-full object-cover"
-                                            alt="Wellness Experience">
+                                            alt="Wellness Experience" fetchpriority="high">
                                     </div>
                                 </div>
 
@@ -1075,7 +1075,7 @@
                                     <div class="lg:hidden flex flex-col items-center">
                                         <div class="mobile-hero-image-container">
                                             <div class="mobile-organic-circle">
-                                                <img src="{{ asset('images/image8.jpg') }}" alt="Expert Guidance">
+                                                <img loading="lazy" decoding="async" src="{{ asset('images/image8.jpg') }}" alt="Expert Guidance">
                                             </div>
                                         </div>
 
@@ -1114,7 +1114,7 @@
                                 {{-- RIGHT IMAGE - Hidden on mobile --}}
                                 <div class="organic-shape-container hidden lg:block">
                                     <div class="organic-image-mask">
-                                        <img src="{{ asset('images/image6.jpg') }}" class="w-full h-full object-cover"
+                                        <img loading="lazy" decoding="async" src="{{ asset('images/image6.jpg') }}" class="w-full h-full object-cover"
                                             alt="Expert Care">
                                     </div>
                                 </div>
@@ -1157,7 +1157,7 @@
                                     <div class="lg:hidden flex flex-col items-center">
                                         <div class="mobile-hero-image-container">
                                             <div class="mobile-organic-circle">
-                                                <img src="{{ asset('images/image10.png') }}" alt="Growth Journey">
+                                                <img loading="lazy" decoding="async" src="{{ asset('images/image10.png') }}" alt="Growth Journey">
                                             </div>
                                         </div>
 
@@ -1196,7 +1196,7 @@
                                 {{-- RIGHT IMAGE - Hidden on mobile --}}
                                 <div class="organic-shape-container hidden lg:block">
                                     <div class="organic-image-mask">
-                                        <img src="{{ asset('images/image4.jpg') }}" class="w-full h-full object-cover"
+                                        <img loading="lazy" decoding="async" src="{{ asset('images/image4.jpg') }}" class="w-full h-full object-cover"
                                             alt="Child Development Care">
                                     </div>
                                 </div>
@@ -1281,7 +1281,7 @@
                             </div>
                             <div
                                 class="relative w-24 h-24 rounded-full bg-white p-1 border border-gray-100 shadow-sm relative z-10">
-                                <img src="{{ asset('images/Mushthaq.P.PNG') }}" width="96" height="96" loading="lazy" class="w-full h-full object-cover rounded-full"
+                                <img loading="lazy" decoding="async" src="{{ asset('images/Mushthaq.P.PNG') }}" width="96" height="96" loading="lazy" class="w-full h-full object-cover rounded-full"
                                     alt="Mushtaq - Founder & CEO">
                             </div>
                         </div>
@@ -1491,7 +1491,7 @@
                                     style="background-color: {{ $service['bgColor'] }}; border: 1px solid rgba(0,0,0,0.03);">
                                     {{-- We apply a css filter hack or specific styled icon if needed, for now we load the SVG and
                                     let it display normally. Ideally these are single-color SVGs --}}
-                                    <img src="{{ asset('images/icons/' . $service['icon']) }}" alt="{{ $service['title'] }}"
+                                    <img loading="lazy" decoding="async" src="{{ asset('images/icons/' . $service['icon']) }}" alt="{{ $service['title'] }}"
                                         class="service-icon-img" style="filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));">
                                 </div>
                                 <h3 class="service-card-title">{{ $service['title'] }}</h3>
@@ -1595,9 +1595,9 @@
                                     <div class="service-card-v2" data-aos="fade-up" data-aos-delay="{{ ($index + 1) * 100 }}"
                                         style="background-color: {{ $service['bgColor'] }}; border: 1px solid {{ $service['borderColor'] }};">
                                         <div class="card-top-image-v2">
-                                            <img src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}" width="400" height="300" loading="lazy">
+                                            <img loading="lazy" decoding="async" src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}" width="400" height="300" loading="lazy">
                                             <div class="icon-bubble-v2" style="background-color: {{ $service['color'] }}">
-                                                <img src="{{ asset('images/icons/' . $service['icon']) }}"
+                                                <img loading="lazy" decoding="async" src="{{ asset('images/icons/' . $service['icon']) }}"
                                                     alt="{{ $service['title'] }}" width="32" height="32" loading="lazy">
                                             </div>
                                         </div>
@@ -2229,7 +2229,7 @@
                         <p class="text-[15px] text-[#5f6368] mb-5 font-medium" style="font-family: Arial, sans-serif;">Based on
                             <span class="font-bold text-[#202124]">72 reviews</span>
                         </p>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" width="100" height="32" loading="lazy"
+                        <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" width="100" height="32" loading="lazy"
                             class="h-8">
                     </div>
 
@@ -2268,7 +2268,7 @@
                                             <div class="text-[#5f6368] text-[13px] mt-0.5 font-sans">2024-08-12</div>
                                         </div>
                                     </div>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                    <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
                                         alt="Google" width="20" height="20" loading="lazy" class="w-5 h-5 mt-1">
                                 </div>
                                 <div class="flex items-center gap-1 mb-3">
@@ -2309,7 +2309,7 @@
                                             <div class="text-[#5f6368] text-[13px] mt-0.5 font-sans">2024-11-04</div>
                                         </div>
                                     </div>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                    <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
                                         alt="Google" width="20" height="20" loading="lazy" class="w-5 h-5 mt-1">
                                 </div>
                                 <div class="flex items-center gap-1 mb-3">
@@ -2350,7 +2350,7 @@
                                             <div class="text-[#5f6368] text-[13px] mt-0.5 font-sans">2025-01-15</div>
                                         </div>
                                     </div>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                    <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
                                         alt="Google" width="20" height="20" loading="lazy" class="w-5 h-5 mt-1">
                                 </div>
                                 <div class="flex items-center gap-1 mb-3">
@@ -2390,7 +2390,7 @@
                                             <div class="text-[#5f6368] text-[13px] mt-0.5 font-sans">2025-02-28</div>
                                         </div>
                                     </div>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                    <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
                                         alt="Google" width="20" height="20" loading="lazy" class="w-5 h-5 mt-1">
                                 </div>
                                 <div class="flex items-center gap-1 mb-3">
@@ -2572,7 +2572,7 @@
                         {{-- Graphic Mask Circle Background --}}
                         <div class="absolute bottom-0 right-0 w-[350px] h-[350px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full translate-y-[20%] translate-x-[10%] transition-transform duration-700 hover:scale-105 overflow-hidden"
                             style="background-color: rgba(255,255,255,0.15);">
-                            <img src="{{ asset('images/image1.jpg') }}" alt="Child participating in special education activities at GEMS CDC" width="500" height="500" loading="lazy"
+                            <img loading="lazy" decoding="async" src="{{ asset('images/image1.jpg') }}" alt="Child participating in special education activities at GEMS CDC" width="500" height="500" loading="lazy"
                                 class="w-full h-full object-cover opacity-90 transition-all duration-700 mix-blend-overlay hover:mix-blend-normal hover:opacity-100">
                         </div>
 

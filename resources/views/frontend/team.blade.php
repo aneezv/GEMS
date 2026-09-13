@@ -53,7 +53,7 @@
                     data-aos="fade-up">
                     <div
                         class="w-48 h-48 lg:w-64 lg:h-64 rounded-[2rem] overflow-hidden flex-shrink-0 shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                        <img src="{{ asset('images/Mushthaq.P.PNG') }}" alt="Mushtaq" class="w-full h-full object-cover">
+                        <img loading="lazy" decoding="async" src="{{ asset('images/Mushthaq.P.PNG') }}" alt="Mushtaq" class="w-full h-full object-cover">
                     </div>
                     <div class="flex-1 space-y-6">
                         <div>
@@ -96,7 +96,7 @@
                     <div class="p-6 rounded-[2rem] h-full shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border"
                         style="background-color: rgba(50, 168, 184, 0.05); border-color: rgba(50, 168, 184, 0.2);">
                         <div class="aspect-square rounded-[1.5rem] overflow-hidden mb-6 relative shadow-md">
-                            <img src="{{ asset('images/Narmada Soman .PNG') }}" alt="Narmada Soman"
+                            <img loading="lazy" decoding="async" src="{{ asset('images/Narmada Soman .PNG') }}" alt="Narmada Soman"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 onerror="this.src='https://ui-avatars.com/api/?name=Narmada+Soman&background=32A8B8&color=fff&size=300'">
                             <div
@@ -119,7 +119,7 @@
                     <div class="p-6 rounded-[2rem] h-full shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border"
                         style="background-color: rgba(234, 111, 113, 0.05); border-color: rgba(234, 111, 113, 0.2);">
                         <div class="aspect-square rounded-[1.5rem] overflow-hidden mb-6 relative shadow-md">
-                            <img src="{{ asset('images/Manjima K.PNG') }}" alt="Manjima K."
+                            <img loading="lazy" decoding="async" src="{{ asset('images/Manjima K.PNG') }}" alt="Manjima K."
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 onerror="this.src='https://ui-avatars.com/api/?name=Manjima+K&background=EA6F71&color=fff&size=300'">
                             <div
@@ -142,7 +142,7 @@
                     <div class="p-6 rounded-[2rem] h-full shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border"
                         style="background-color: rgba(233, 157, 29, 0.05); border-color: rgba(233, 157, 29, 0.2);">
                         <div class="aspect-square rounded-[1.5rem] overflow-hidden mb-6 relative shadow-md">
-                            <img src="{{ asset('images/Prarthana.P P.PNG') }}" alt="Prarthana.P P"
+                            <img loading="lazy" decoding="async" src="{{ asset('images/Prarthana.P P.PNG') }}" alt="Prarthana.P P"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 onerror="this.src='https://ui-avatars.com/api/?name=Prarthana+P+P&background=E99D1D&color=fff&size=300'">
                             <div
@@ -165,7 +165,7 @@
                     <div class="p-6 rounded-[2rem] h-full shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border"
                         style="background-color: rgba(151, 180, 26, 0.05); border-color: rgba(151, 180, 26, 0.2);">
                         <div class="aspect-square rounded-[1.5rem] overflow-hidden mb-6 relative shadow-md">
-                            <img src="{{ asset('images/Malavika K.PNG') }}" alt="Malavika K."
+                            <img loading="lazy" decoding="async" src="{{ asset('images/Malavika K.PNG') }}" alt="Malavika K."
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 onerror="this.src='https://ui-avatars.com/api/?name=Malavika+K&background=97B41A&color=fff&size=300'">
                             <div
@@ -188,7 +188,7 @@
                     <div class="p-6 rounded-[2rem] h-full shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border"
                         style="background-color: rgba(50, 168, 184, 0.05); border-color: rgba(50, 168, 184, 0.2);">
                         <div class="aspect-square rounded-[1.5rem] overflow-hidden mb-6 relative shadow-md">
-                            <img src="{{ asset('images/Thara Ranveendran.PNG') }}" alt="Thara Ranveendran"
+                            <img loading="lazy" decoding="async" src="{{ asset('images/Thara Ranveendran.PNG') }}" alt="Thara Ranveendran"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 onerror="this.src='https://ui-avatars.com/api/?name=Thara+Ranveendran&background=32A8B8&color=fff&size=300'">
                             <div

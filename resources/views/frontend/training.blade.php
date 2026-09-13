@@ -52,7 +52,7 @@
             {{-- Category 1: Parents --}}
             <div class="group bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.06)] overflow-hidden flex flex-col transform transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-gray-100" data-aos="fade-up">
                 <div class="relative h-56 overflow-hidden">
-                    <img src="{{ asset('images/image1.jpg') }}" alt="Parent Training" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    <img loading="lazy" decoding="async" src="{{ asset('images/image1.jpg') }}" alt="Parent Training" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 text-white">
                         <span class="px-3 py-1 bg-[#32A8B8] rounded-full text-xs font-bold uppercase tracking-wider">Parents & Families</span>
@@ -83,7 +83,7 @@
             {{-- Category 2: Teachers --}}
             <div class="group bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.06)] overflow-hidden flex flex-col transform transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-gray-100" data-aos="fade-up" data-aos-delay="100">
                 <div class="relative h-56 overflow-hidden">
-                    <img src="{{ asset('images/image4.jpg') }}" alt="Teacher Training" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    <img loading="lazy" decoding="async" src="{{ asset('images/image4.jpg') }}" alt="Teacher Training" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 text-white">
                         <span class="px-3 py-1 bg-[#EA6F71] rounded-full text-xs font-bold uppercase tracking-wider">Educators</span>
@@ -114,7 +114,7 @@
             {{-- Category 3: Students/Shadow --}}
             <div class="group bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.06)] overflow-hidden flex flex-col transform transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-gray-100" data-aos="fade-up" data-aos-delay="200">
                 <div class="relative h-56 overflow-hidden">
-                    <img src="{{ asset('images/image12.jpg') }}" alt="Professional Training" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    <img loading="lazy" decoding="async" src="{{ asset('images/image12.jpg') }}" alt="Professional Training" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 text-white">
                         <span class="px-3 py-1 bg-[#97B41A] rounded-full text-xs font-bold uppercase tracking-wider">Professionals</span>

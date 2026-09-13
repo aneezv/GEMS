@@ -42,7 +42,7 @@
             {{-- Psychological Assessment --}}
             <a id="psychological-assessment" href="/contact" class="group block bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] overflow-hidden text-center relative flex flex-col items-center pb-8 transform transition-all duration-500 ease-out hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] active:scale-[0.97] active:shadow-md cursor-pointer" data-aos="fade-up">
                 <div class="relative w-full h-[220px] overflow-hidden">
-                    <img src="{{ asset('images/image12.jpg') }}" alt="Psychological Assessment" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110">
+                    <img loading="lazy" decoding="async" src="{{ asset('images/image12.jpg') }}" alt="Psychological Assessment" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110">
                     <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-none z-10 transition-transform duration-500 group-hover:translate-y-1">
                         <svg class="relative block w-full h-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                             <path d="M0,120 V60 C300,-20 900,140 1200,60 V120 Z" class="fill-white"></path>
@@ -66,7 +66,7 @@
             {{-- Behavioural Therapy --}}
             <a id="behaviour-therapy" href="/contact" class="group block bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] overflow-hidden text-center relative flex flex-col items-center pb-8 transform transition-all duration-500 ease-out hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] active:scale-[0.97] active:shadow-md cursor-pointer" data-aos="fade-up" data-aos-delay="100">
                 <div class="relative w-full h-[220px] overflow-hidden">
-                    <img src="{{ asset('images/image6.jpg') }}" alt="Behavioural Therapy" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110">
+                    <img loading="lazy" decoding="async" src="{{ asset('images/image6.jpg') }}" alt="Behavioural Therapy" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110">
                     <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-none z-10 transition-transform duration-500 group-hover:translate-y-1">
                         <svg class="relative block w-full h-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                             <path d="M0,120 V60 C300,-20 900,140 1200,60 V120 Z" class="fill-white"></path>
@@ -90,7 +90,7 @@
             {{-- Speech Therapy --}}
             <a id="speech-therapy" href="/contact" class="group block bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] overflow-hidden text-center relative flex flex-col items-center pb-8 transform transition-all duration-500 ease-out hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] active:scale-[0.97] active:shadow-md cursor-pointer" data-aos="fade-up" data-aos-delay="200">
                 <div class="relative w-full h-[220px] overflow-hidden">
-                    <img src="{{ asset('images/image15.jpg') }}" alt="Speech Therapy" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110">
+                    <img loading="lazy" decoding="async" src="{{ asset('images/image15.jpg') }}" alt="Speech Therapy" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110">
                     <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-none z-10 transition-transform duration-500 group-hover:translate-y-1">
                         <svg class="relative block w-full h-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                             <path d="M0,120 V60 C300,-20 900,140 1200,60 V120 Z" class="fill-white"></path>
@@ -114,7 +114,7 @@
             {{-- Occupational Therapy --}}
             <a id="occupational-therapy" href="/contact" class="group block bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] overflow-hidden text-center relative flex flex-col items-center pb-8 transform transition-all duration-500 ease-out hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] active:scale-[0.97] active:shadow-md cursor-pointer" data-aos="fade-up">
                 <div class="relative w-full h-[220px] overflow-hidden">
-                    <img src="{{ asset('images/image14.jpg') }}" alt="Occupational Therapy" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110">
+                    <img loading="lazy" decoding="async" src="{{ asset('images/image14.jpg') }}" alt="Occupational Therapy" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110">
                     <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-none z-10 transition-transform duration-500 group-hover:translate-y-1">
                         <svg class="relative block w-full h-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                             <path d="M0,120 V60 C300,-20 900,140 1200,60 V120 Z" class="fill-white"></path>
@@ -138,7 +138,7 @@
             {{-- Special Education --}}
             <a id="special-education" href="/contact" class="group block bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] overflow-hidden text-center relative flex flex-col items-center pb-8 transform transition-all duration-500 ease-out hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] active:scale-[0.97] active:shadow-md cursor-pointer" data-aos="fade-up" data-aos-delay="100">
                 <div class="relative w-full h-[220px] overflow-hidden">
-                    <img src="{{ asset('images/image4.jpg') }}" alt="Special Education" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110">
+                    <img loading="lazy" decoding="async" src="{{ asset('images/image4.jpg') }}" alt="Special Education" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110">
                     <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-none z-10 transition-transform duration-500 group-hover:translate-y-1">
                         <svg class="relative block w-full h-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                             <path d="M0,120 V60 C300,-20 900,140 1200,60 V120 Z" class="fill-white"></path>
@@ -162,7 +162,7 @@
             {{-- Psychotherapy & Counselling --}}
             <a id="psychotherapy-counselling" href="/contact" class="group block bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] overflow-hidden text-center relative flex flex-col items-center pb-8 transform transition-all duration-500 ease-out hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] active:scale-[0.97] active:shadow-md cursor-pointer" data-aos="fade-up" data-aos-delay="200">
                 <div class="relative w-full h-[220px] overflow-hidden">
-                    <img src="{{ asset('images/image13.jpg') }}" alt="Psychotherapy & Counselling" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110" onerror="this.src='{{ asset('images/image2.jpg') }}'">
+                    <img loading="lazy" decoding="async" src="{{ asset('images/image13.jpg') }}" alt="Psychotherapy & Counselling" class="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110" onerror="this.src='{{ asset('images/image2.jpg') }}'">
                     <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-none z-10 transition-transform duration-500 group-hover:translate-y-1">
                         <svg class="relative block w-full h-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                             <path d="M0,120 V60 C300,-20 900,140 1200,60 V120 Z" class="fill-white"></path>
