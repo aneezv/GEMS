@@ -221,7 +221,6 @@
                 <div class="flex items-center gap-6 text-sm text-gray-400">
                     <a href="/privacy-policy" class="hover:text-[#32A8B8] transition-colors">Privacy Policy</a>
                     <a href="/terms" class="hover:text-[#32A8B8] transition-colors">Terms of Service</a>
-                    <a href="/contact" class="hover:text-[#32A8B8] transition-colors">Sitemap</a>
                     
                 </div>
             </div>
