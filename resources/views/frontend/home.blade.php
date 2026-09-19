@@ -2204,11 +2204,123 @@
         {{-- ================= TESTIMONIALS ================= --}}
         <section class="py-16 lg:py-24 relative overflow-hidden bg-white">
             <div class="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text"
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4 text-transparent bg-clip-text"
                     style="background-image: linear-gradient(to right, #00A79D, #EA6F71); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
                     data-aos="fade-up">
                     Stories of Hope & Success
                 </h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-14 text-base sm:text-lg" data-aos="fade-up" data-aos-delay="50">
+                    Real journeys, real milestones. Hear directly from parents whose children found their voice and confidence at GEMS.
+                </p>
+
+                {{-- Structured Data for Video SEO (E-E-A-T & Google Rich Snippets) --}}
+                <script type="application/ld+json">
+                {!! json_encode([
+                    '@context' => 'https://schema.org',
+                    '@graph' => [
+                        [
+                            '@type' => 'VideoObject',
+                            'name' => 'Parent Story: Remarkable Progress at GEMS Child Development Centre',
+                            'description' => 'Mother of a 4-year-old boy shares her experience with pediatric therapy at GEMS Kozhikode, seeing notable improvements in speech, hyperactivity, and eye contact.',
+                            'thumbnailUrl' => asset('images/video-story-thumb-1.webp'),
+                            'uploadDate' => '2024-11-01T09:00:00+05:30',
+                            'duration' => 'PT1M30S',
+                            'contentUrl' => asset('videos/gems-testimonial-1.mp4'),
+                            'embedUrl' => url('/') . '#testimonials',
+                            'inLanguage' => 'ml',
+                            'publisher' => [
+                                '@type' => 'MedicalOrganization',
+                                'name' => 'GEMS Child Development Centre',
+                                'url' => url('/'),
+                                'logo' => [
+                                    '@type' => 'ImageObject',
+                                    'url' => asset('images/Logo.png'),
+                                ],
+                            ],
+                        ],
+                        [
+                            '@type' => 'VideoObject',
+                            'name' => 'Parent Testimonial: Caring Therapy & Guidance at GEMS Calicut',
+                            'description' => 'Mother of a 9-year-old child shares her heartfelt feedback on the transformative pediatric therapy and dedicated therapists at GEMS Child Development Centre.',
+                            'thumbnailUrl' => asset('images/video-story-thumb-2.webp'),
+                            'uploadDate' => '2024-11-01T09:00:00+05:30',
+                            'duration' => 'PT1M2S',
+                            'contentUrl' => asset('videos/gems-testimonial-2.mp4'),
+                            'embedUrl' => url('/') . '#testimonials',
+                            'inLanguage' => 'ml',
+                            'publisher' => [
+                                '@type' => 'MedicalOrganization',
+                                'name' => 'GEMS Child Development Centre',
+                                'url' => url('/'),
+                                'logo' => [
+                                    '@type' => 'ImageObject',
+                                    'url' => asset('images/Logo.png'),
+                                ],
+                            ],
+                        ],
+                    ],
+                ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
+                </script>
+
+                <!-- ================= VERTICAL VIDEO STORIES (REELS) ================= -->
+                <div class="mb-20" data-aos="fade-up" data-aos-delay="100">
+                    <!-- 2 Vertical Reel Cards Grid -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-8 lg:gap-12 max-w-4xl mx-auto px-4">
+                        
+                        {{-- Story Card 1 --}}
+                        <div class="group relative w-full max-w-[280px] sm:max-w-[310px] aspect-[9/16] rounded-[28px] overflow-hidden shadow-[0_14px_35px_rgba(0,0,0,0.12)] border border-gray-100 cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_45px_rgba(0,102,132,0.25)] bg-black"
+                             onclick="openVideoModal('{{ asset('videos/gems-testimonial-1.mp4') }}')">
+                            
+                            {{-- Poster Image (WebP lightweight) --}}
+                            <img src="{{ asset('images/video-story-thumb-1.webp') }}" 
+                                 alt="Parent video testimonial at GEMS"
+                                 width="540" height="960" loading="lazy" decoding="async"
+                                 class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-105">
+
+                            {{-- Subtle Ambient Hover Overlay --}}
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition-colors duration-300 pointer-events-none"></div>
+
+                            {{-- Center Play Button with Soft Pulsing Aura --}}
+                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+                                <div class="relative flex items-center justify-center">
+                                    <span class="absolute w-20 h-20 rounded-full bg-[#00A79D]/30 animate-ping"></span>
+                                    <div class="w-16 h-16 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-[#006684] shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                                        <svg class="w-7 h-7 translate-x-0.5 text-[#006684]" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Story Card 2 --}}
+                        <div class="group relative w-full max-w-[280px] sm:max-w-[310px] aspect-[9/16] rounded-[28px] overflow-hidden shadow-[0_14px_35px_rgba(0,0,0,0.12)] border border-gray-100 cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_45px_rgba(0,102,132,0.25)] bg-black"
+                             onclick="openVideoModal('{{ asset('videos/gems-testimonial-2.mp4') }}')">
+                            
+                            {{-- Poster Image (WebP lightweight) --}}
+                            <img src="{{ asset('images/video-story-thumb-2.webp') }}" 
+                                 alt="Parent video testimonial at GEMS"
+                                 width="540" height="960" loading="lazy" decoding="async"
+                                 class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-105">
+
+                            {{-- Subtle Ambient Hover Overlay --}}
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition-colors duration-300 pointer-events-none"></div>
+
+                            {{-- Center Play Button with Soft Pulsing Aura --}}
+                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+                                <div class="relative flex items-center justify-center">
+                                    <span class="absolute w-20 h-20 rounded-full bg-[#00A79D]/30 animate-ping"></span>
+                                    <div class="w-16 h-16 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-[#006684] shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                                        <svg class="w-7 h-7 translate-x-0.5 text-[#006684]" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
                 <!-- Google Reviews Widget Layout -->
                 <div class="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16 w-full" data-aos="fade-up"
@@ -2481,6 +2593,90 @@
                             const walk = (x - startX) * 2;
                             container.scrollLeft = scrollLeft - walk;
                         });
+                    });
+                </script>
+
+                <!-- ================= VIDEO THEATER LIGHTBOX MODAL ================= -->
+                <div id="video-story-modal" 
+                     class="fixed inset-0 z-[99999] hidden items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md opacity-0 transition-opacity duration-300"
+                     role="dialog" 
+                     aria-modal="true"
+                     aria-label="Parent Video Story Player">
+                    
+                    {{-- Backdrop Click to Close --}}
+                    <div class="absolute inset-0 cursor-pointer" onclick="closeVideoModal()"></div>
+
+                    {{-- Modal Window (Sleek Smartphone Reel Frame) --}}
+                    <div class="relative z-10 w-full max-w-[360px] sm:max-w-[400px] aspect-[9/16] max-h-[90vh] bg-black rounded-[32px] overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.6)] border border-white/20 flex flex-col items-center justify-center">
+                        
+                        {{-- Close Button --}}
+                        <button onclick="closeVideoModal()" 
+                                class="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center backdrop-blur-md transition-transform hover:scale-110 shadow-lg cursor-pointer"
+                                aria-label="Close Video">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+
+                        {{-- HTML5 Video Player --}}
+                        <video id="modal-video-player"
+                               class="w-full h-full object-cover"
+                               controls
+                               playsinline
+                               preload="none">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <script>
+                    function openVideoModal(videoSrc) {
+                        const modal = document.getElementById('video-story-modal');
+                        const video = document.getElementById('modal-video-player');
+                        
+                        if (!modal || !video) return;
+
+                        video.src = videoSrc;
+                        modal.classList.remove('hidden');
+                        modal.classList.add('flex');
+                        
+                        requestAnimationFrame(() => {
+                            modal.classList.remove('opacity-0');
+                            modal.classList.add('opacity-100');
+                        });
+
+                        video.play().catch(err => {
+                            console.log('Video autoplay deferred:', err);
+                        });
+
+                        document.body.style.overflow = 'hidden';
+                    }
+
+                    function closeVideoModal() {
+                        const modal = document.getElementById('video-story-modal');
+                        const video = document.getElementById('modal-video-player');
+
+                        if (!modal || !video) return;
+
+                        video.pause();
+                        video.currentTime = 0;
+                        video.src = '';
+
+                        modal.classList.remove('opacity-100');
+                        modal.classList.add('opacity-0');
+
+                        setTimeout(() => {
+                            modal.classList.remove('flex');
+                            modal.classList.add('hidden');
+                            document.body.style.overflow = '';
+                        }, 300);
+                    }
+
+                    // Keyboard navigation
+                    document.addEventListener('keydown', function(e) {
+                        if (e.key === 'Escape') {
+                            closeVideoModal();
+                        }
                     });
                 </script>
             </div>

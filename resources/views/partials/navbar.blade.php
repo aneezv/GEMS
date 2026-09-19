@@ -1,4 +1,4 @@
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+<header class="sticky top-0 z-[60] bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 lg:h-20">
 
@@ -93,8 +93,8 @@
 
         {{-- MOBILE MENU --}}
         <div id="mobile-menu"
-            class="lg:hidden fixed inset-x-0 top-16 h-0 bg-white shadow-xl overflow-hidden transition-all duration-300 ease-in-out z-40">
-            <div class="container mx-auto px-4 py-4">
+            class="lg:hidden fixed inset-x-0 top-16 h-0 bg-white shadow-xl overflow-hidden transition-all duration-300 ease-in-out z-[60]">
+            <div class="container mx-auto px-4 py-4 pb-16">
                 <div class="space-y-0">
                     @foreach($navItems as $item)
                         <a href="{{ $item['url'] }}"
@@ -233,47 +233,60 @@
         const menuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         const bars = ['bar1', 'bar2', 'bar3'].map(id => document.getElementById(id));
+        const bottomCta = document.getElementById('mobile-bottom-cta');
+
+        function setBottomCtaVisible(visible) {
+            if (!bottomCta) return;
+            if (visible) {
+                bottomCta.classList.remove('translate-y-full', 'opacity-0', 'pointer-events-none');
+            } else {
+                bottomCta.classList.add('translate-y-full', 'opacity-0', 'pointer-events-none');
+            }
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.remove('mobile-menu-open');
+            mobileMenu.style.height = '0';
+            menuButton.classList.remove('active');
+            setBottomCtaVisible(true);
+        }
+
+        function openMenu() {
+            mobileMenu.classList.add('mobile-menu-open');
+            mobileMenu.style.height = 'calc(100vh - 4rem)';
+            menuButton.classList.add('active');
+            setBottomCtaVisible(false);
+        }
 
         menuButton.addEventListener('click', function () {
             const isOpen = mobileMenu.classList.contains('mobile-menu-open');
-
             if (isOpen) {
-                // Close menu
-                mobileMenu.classList.remove('mobile-menu-open');
-                mobileMenu.style.height = '0';
-                menuButton.classList.remove('active');
+                closeMenu();
             } else {
-                // Open menu
-                mobileMenu.classList.add('mobile-menu-open');
-                mobileMenu.style.height = 'calc(100vh - 4rem)';
-                menuButton.classList.add('active');
+                openMenu();
             }
         });
 
         // Close menu when clicking on a link
         mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('mobile-menu-open');
-                mobileMenu.style.height = '0';
-                menuButton.classList.remove('active');
-            });
+            link.addEventListener('click', closeMenu);
         });
 
         // Close menu when clicking outside
         document.addEventListener('click', function (event) {
             if (!menuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
-                mobileMenu.classList.remove('mobile-menu-open');
-                mobileMenu.style.height = '0';
-                menuButton.classList.remove('active');
+                if (mobileMenu.classList.contains('mobile-menu-open')) {
+                    closeMenu();
+                }
             }
         });
 
         // Close menu on escape key
         document.addEventListener('keydown', function (event) {
             if (event.key === 'Escape') {
-                mobileMenu.classList.remove('mobile-menu-open');
-                mobileMenu.style.height = '0';
-                menuButton.classList.remove('active');
+                if (mobileMenu.classList.contains('mobile-menu-open')) {
+                    closeMenu();
+                }
             }
         });
     });

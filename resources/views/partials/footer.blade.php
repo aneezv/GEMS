@@ -107,7 +107,6 @@
                             ['name' => 'Our Team', 'url' => '/team', 'icon' => '🤝'],
                             ['name' => 'Services', 'url' => '/services', 'icon' => '🎯'],
                             ['name' => 'Training', 'url' => '/training', 'icon' => '🎓'],
-                            ['name' => 'Testimonials', 'url' => '/testimonials', 'icon' => '⭐'],
                             ['name' => 'Gallery', 'url' => '/gallery', 'icon' => '🖼️'],
                             ['name' => 'Careers', 'url' => '/career', 'icon' => '💼'],
                             ['name' => 'Contact Us', 'url' => '/contact', 'icon' => '📞'],
@@ -139,7 +138,7 @@
                             'Special Education',
                             'Behavioral Therapy',
                             'Psychotherapy & Counseling',
-                            'psychological Assessment',
+                            'Psychological Assessment',
                         ];
                     @endphp
 
@@ -248,8 +247,8 @@
     </div>
 
     {{-- Floating CTA for mobile --}}
-    <div
-        class="lg:hidden fixed z-50 bottom-0 left-0 right-0 bg-gradient-to-r from-[#32A8B8] to-[#EA6F71] text-white p-4 shadow-lg">
+    <div id="mobile-bottom-cta"
+        class="lg:hidden fixed z-30 bottom-0 left-0 right-0 bg-gradient-to-r from-[#32A8B8] to-[#EA6F71] text-white p-4 shadow-lg transition-all duration-300">
         <div class="flex items-center justify-between max-w-7xl mx-auto px-4">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
