@@ -33,7 +33,9 @@ Route::get('/sitemap.xml', function () {
         ['loc' => url('/team'), 'lastmod' => now()->toDateString(), 'changefreq' => 'monthly', 'priority' => '0.7'],
         ['loc' => url('/gallery'), 'lastmod' => now()->toDateString(), 'changefreq' => 'weekly', 'priority' => '0.7'],
         ['loc' => url('/career'), 'lastmod' => now()->toDateString(), 'changefreq' => 'monthly', 'priority' => '0.6'],
-    ];
+        ['loc' => url('/terms'), 'lastmod' => now()->toDateString(), 'changefreq' => 'yearly', 'priority' => '0.5'],
+        ['loc' => url('/privacy-policy'), 'lastmod' => now()->toDateString(), 'changefreq' => 'yearly', 'priority' => '0.5'],
+        ];
 
     return response()->view('sitemap', compact('urls'))
         ->header('Content-Type', 'text/xml');

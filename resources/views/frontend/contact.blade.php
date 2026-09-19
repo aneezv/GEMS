@@ -75,7 +75,7 @@
                             ✉️</div>
                         <p class="font-bold text-gray-900 text-lg mb-2">Email Us</p>
                         <p class="text-gray-600 mb-3">We reply within 24 hours</p>
-                        <a href="gemsrehab@gmail.com"
+                        <a href="mailto:gemsrehab@gmail.com"
                             class="text-lg font-bold text-teal-600 hover:text-teal-700">gemsrehab@gmail.com</a>
                     </div>
                 </div>

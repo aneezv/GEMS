@@ -17,7 +17,7 @@
     <link rel="canonical" href="@yield('canonical', url()->current())">
 
     {{-- Open Graph --}}
-    <meta property="og:title" content="@yield('og_title', 'GEMS  | Best Child Development Centre in Kerala')">
+    <meta property="og:title" content="@yield('og_title', 'GEMS | Best Child Development Centre in Kerala')">
     <meta property="og:description"
         content="@yield('og_description', 'Comprehensive child development therapies and special education programs in Kerala.')">
     <meta property="og:type" content="website">
