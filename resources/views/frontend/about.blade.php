@@ -336,9 +336,9 @@
                             to listen, to care, and to work tirelessly to help your child shine."
                         </p>
                     </div>
-                    <div class="mt-8">
+                    <!-- <div class="mt-8">
                         <img src="{{ asset('images/signature.png') }}" alt="Signature" class="h-16 opacity-60">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
