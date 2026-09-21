@@ -2727,6 +2727,36 @@
                     </details>
                 </div>
             </div>
+
+            {{-- FAQPage Structured Data (E-E-A-T) --}}
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [{
+                "@type": "Question",
+                "name": "How do I know if my child needs therapy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "If you notice delays in speech, motor skills, social interaction, or behavior compared to other children of the same age, it's best to consult a professional. Early intervention yields the best results."
+                }
+              }, {
+                "@type": "Question",
+                "name": "Do you offer online consultations?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we offer tele-therapy and online parent counseling sessions for families who cannot visit our center physically."
+                }
+              }, {
+                "@type": "Question",
+                "name": "What ages do you treat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We work with children from infancy (Early Intervention) up to adolescence (18 years), providing age-appropriate therapies and support."
+                }
+              }]
+            }
+            </script>
         </section>
 
         {{-- ================= FINAL CTA ================= --}}

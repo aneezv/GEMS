@@ -226,21 +226,29 @@
 
             {{-- Accreditation badges --}}
             <div class="mt-8 flex flex-wrap items-center justify-center gap-6 opacity-75">
-                <div class="text-center">
-                    <div class="text-2xl">🏆</div>
-                    <p class="text-xs mt-1">ISO Certified</p>
+                <div class="text-center group hover:opacity-100 transition-opacity">
+                    <svg class="w-8 h-8 mx-auto text-teal-600 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    </svg>
+                    <p class="text-xs font-semibold">ISO Certified</p>
                 </div>
-                <div class="text-center">
-                    <div class="text-2xl">⭐</div>
-                    <p class="text-xs mt-1">Govt. Recognized</p>
+                <div class="text-center group hover:opacity-100 transition-opacity">
+                    <svg class="w-8 h-8 mx-auto text-teal-600 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    <p class="text-xs font-semibold">Govt. Recognized</p>
                 </div>
-                <div class="text-center">
-                    <div class="text-2xl">🩺</div>
-                    <p class="text-xs mt-1">RCI Approved</p>
+                <div class="text-center group hover:opacity-100 transition-opacity">
+                    <svg class="w-8 h-8 mx-auto text-teal-600 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
+                    <p class="text-xs font-semibold">RCI Approved</p>
                 </div>
-                <div class="text-center">
-                    <div class="text-2xl">❤️</div>
-                    <p class="text-xs mt-1">Child Safe</p>
+                <div class="text-center group hover:opacity-100 transition-opacity">
+                    <svg class="w-8 h-8 mx-auto text-pink-500 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <p class="text-xs font-semibold">Child Safe</p>
                 </div>
             </div>
         </div>
