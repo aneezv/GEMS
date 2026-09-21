@@ -48,6 +48,11 @@
       "email": "gemsrehab@gmail.com",
       "priceRange": "$$",
       "isAcceptingNewPatients": "True",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "72"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Pallipatu Ayyapa Temple Road, Civil Station",
@@ -501,3 +506,4 @@
 </body>
 
 </html>
+
