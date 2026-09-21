@@ -345,13 +345,14 @@
 
         // DOM ready
         document.addEventListener('DOMContentLoaded', function () {
-            // Hide loading overlay
-            setTimeout(() => {
-                document.getElementById('loading-overlay').style.opacity = '0';
+            // Hide loading overlay instantly
+            const overlay = document.getElementById('loading-overlay');
+            if (overlay) {
+                overlay.style.opacity = '0';
                 setTimeout(() => {
-                    document.getElementById('loading-overlay').style.display = 'none';
+                    overlay.style.display = 'none';
                 }, 300);
-            }, 800);
+            }
 
             // Scroll progress bar
             const progressBar = document.getElementById('progress-bar');
