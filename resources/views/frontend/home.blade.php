@@ -1612,7 +1612,7 @@
                                             <p class="card-text-v2">{!! nl2br(e($service['description'])) !!}</p>
 
                                             <a href="{{ $service['link'] ?? '/services' }}" class="card-btn-v2"
-                                                style="background-color: {{ $service['color'] }}">
+                                                style="background-color: {{ $service['color'] }}" aria-label="Learn more about {{ $service['title'] }}">
                                                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                                         d="M17 8l4 4m0 0l-4 4m4-4H3" />
