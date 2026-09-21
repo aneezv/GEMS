@@ -66,11 +66,11 @@
                             unique needs of each child."
                         </p>
                         <div class="flex gap-4">
-                            <a href="#"
+                            <a href="https://www.linkedin.com/in/mushthaq-parapparakkal-b5591b1a8/" target="_blank" rel="noopener noreferrer"
                                 class="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 hover:bg-teal-600 hover:text-white transition-all shadow-sm">
                                 <span class="text-lg">in</span>
                             </a>
-                            <a href="mailto:ceo@gemscdc.com"
+                            <a href="mailto:gemsrehab@gmail.com"
                                 class="w-10 h-10 rounded-full bg-pink-50 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-all shadow-sm">
                                 <span class="text-lg">✉</span>
                             </a>
