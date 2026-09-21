@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,7 @@
     <meta name="keywords"
         content="child development centre kozhikode, autism therapy calicut, speech therapy, occupational therapy, special education, pediatric therapy kerala, GEMS CDC">
     <meta name="author" content="GEMS Child Development Centre">
+    <meta name="robots" content="@yield('robots', 'index, follow')">
     <link rel="canonical" href="@yield('canonical', url()->current())">
 
     {{-- Open Graph --}}
@@ -28,6 +29,7 @@
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('title', 'GEMS Child Development Centre | Kozhikode, Kerala')">
+    <meta name="twitter:image" content="@yield('og_image', asset('images/og-image.jpg'))">
     <meta name="twitter:description" content="@yield('meta_description', 'GEMS Child Development Centre in Kozhikode, Kerala offers expert pediatric therapies, autism support, speech & occupational therapy. Empowering children.')">
 
     {{-- Structured Data (Schema.org / Google Rich Results) --}}
