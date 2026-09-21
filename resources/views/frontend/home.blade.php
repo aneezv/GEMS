@@ -252,22 +252,25 @@
                     .hero-section {
                         background: #ffffff;
                         padding: 0 !important;
-                        min-height: 100vh;
+                        height: auto;
+                        min-height: auto;
                         position: relative;
                         overflow: hidden;
                     }
 
                     .hero-section .swiper-slide {
-                        min-height: 100vh;
+                        height: auto;
+                        min-height: auto;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
-                        padding-top: 2rem;
+                        padding-top: 1rem;
+                        padding-bottom: 0.5rem;
                     }
 
                     .mobile-hero-image-container {
-                        width: 80%;
-                        max-width: 320px;
+                        width: 65%;
+                        max-width: 280px;
                         aspect-ratio: 1;
                         margin: 0 auto;
                         position: relative;
@@ -277,17 +280,13 @@
                     .mobile-organic-circle {
                         width: 100%;
                         height: 100%;
-                        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
                         overflow: hidden;
-                        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-                        border: 8px solid white;
+                        box-shadow: 0 20px 40px rgba(50, 168, 184, 0.15);
                         position: relative;
-                    }
-
-                    .mobile-organic-circle img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
+                        z-index: 2;
+                        animation: blobShape 8s ease-in-out infinite;
+                        background: white;
                     }
 
                     /* Circular border pattern background */
@@ -302,21 +301,22 @@
                     }
 
                     @keyframes rotate {
-                        from {
-                            transform: rotate(0deg);
-                        }
+                        0% { transform: rotate(0deg); }
+                        100% { transform: rotate(360deg); }
+                    }
 
-                        to {
-                            transform: rotate(360deg);
-                        }
+                    .mobile-organic-circle img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
 
                     .mobile-content-card {
-                        padding: 2.5rem 1.5rem;
+                        padding: 1.5rem 1.5rem;
                         text-align: left;
                         width: 100%;
                         background: white;
-                        margin-top: 2rem;
+                        margin-top: 0.5rem;
                         border-radius: 24px;
                         position: relative;
                         z-index: 10;
@@ -650,7 +650,7 @@
                 @media (max-width: 1023px) {
                     .swiper-pagination-hero {
                         position: relative !important;
-                        margin-top: 2rem;
+                        margin-top: 0.5rem;
                         bottom: 0 !important;
                     }
 
@@ -978,6 +978,10 @@
 
                                 {{-- CONTENT - Mobile / Desktop --}}
                                 <div class="z-20 text-center lg:text-left relative w-full lg:relative">
+                                    
+                                    {{-- Single SEO-Optimized H1 for Google (Visually Hidden) --}}
+                                    <h1 class="sr-only">GEMS Child Development Centre in Kozhikode, Kerala</h1>
+
                                     {{-- Mobile optimized layout content --}}
                                     <div class="lg:hidden flex flex-col items-center">
                                         <div class="mobile-hero-image-container">
@@ -987,8 +991,8 @@
                                         </div>
 
                                         <div class="mobile-content-card">
-                                            <span class="mobile-subheading">Best Child Development Center In Kerala</span>
-                                            <h2 class="hero-title">About Us</h2>
+                                            <span class="mobile-subheading">Welcome to GEMS</span>
+                                            <h2 class="hero-title">Child Development Centre Kozhikode</h2>
                                             <p class="hero-description">
                                                 Our center is designed to be a safe, caring, and hopeful environment where every
                                                 child's unique potential is recognized and nurtured.
@@ -1000,11 +1004,9 @@
 
                                     {{-- Desktop layout --}}
                                     <div class="hidden lg:block">
-                                        <h1 class="hero-title text-5xl lg:text-7xl mb-8">
-                                            Precision Care for<br>
-                                            the Human<br>
-                                            Well Being
-                                        </h1>
+                                        <h2 class="hero-title text-4xl lg:text-6xl mb-8">
+                                            Child Development Centre in Kozhikode, Kerala
+                                        </h2>
 
                                         <p
                                             class="hero-description text-gray-600 text-lg lg:text-xl leading-relaxed mb-10 max-w-lg">
@@ -1080,8 +1082,8 @@
                                         </div>
 
                                         <div class="mobile-content-card">
-                                            <span class="mobile-subheading">Comprehensive Expert Guidance</span>
-                                            <h2 class="hero-title">Join Our Family</h2>
+                                            <span class="mobile-subheading">Join Over 1000 Families</span>
+                                            <h2 class="hero-title">Expert Pediatric Therapy</h2>
                                             <p class="hero-description">
                                                 Join over 1000 families who trust our certified therapists for holistic
                                                 developmental care and specialized support.
@@ -1162,8 +1164,8 @@
                                         </div>
 
                                         <div class="mobile-content-card">
-                                            <span class="mobile-subheading">Supporting Every Step</span>
-                                            <h2 class="hero-title">Our Services</h2>
+                                            <span class="mobile-subheading">Comprehensive Care</span>
+                                            <h2 class="hero-title">Specialized Child Therapies</h2>
                                             <p class="hero-description">
                                                 From early intervention to specialized therapies, we walk alongside families at
                                                 every stage of development.
@@ -2216,10 +2218,10 @@
                 {{-- Structured Data for Video SEO (E-E-A-T & Google Rich Snippets) --}}
                 <script type="application/ld+json">
                 {!! json_encode([
-                    '@context' => 'https://schema.org',
-                    '@graph' => [
+                    '@'.'context' => 'https://schema.org',
+                    '@'.'graph' => [
                         [
-                            '@type' => 'VideoObject',
+                            '@'.'type' => 'VideoObject',
                             'name' => 'Parent Story: Remarkable Progress at GEMS Child Development Centre',
                             'description' => 'Mother of a 4-year-old boy shares her experience with pediatric therapy at GEMS Kozhikode, seeing notable improvements in speech, hyperactivity, and eye contact.',
                             'thumbnailUrl' => asset('images/video-story-thumb-1.webp'),
