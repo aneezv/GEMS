@@ -236,13 +236,13 @@
                     </div>
                 </div>
 
-                {{-- Point 5: Assured Result --}}
+                {{-- Point 5: Evidence-Based Outcomes --}}
                 <div data-aos="fade-up" data-aos-delay="500">
                     <div class="tilt-card bg-white p-6 lg:p-8 rounded-[2rem] shadow-lg hover:shadow-2xl group flex flex-col items-center text-center cursor-pointer h-full">
                         <div class="w-16 h-16 bg-[#32A8B8] text-white flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 group-hover:rotate-6 transition-all duration-300" style="border-radius: 32px 10px 32px 10px;">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 1-12 0V2z"></path></svg>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-3" style="font-family: 'Fredoka', sans-serif;">Assured Result</h3>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3" style="font-family: 'Fredoka', sans-serif;">Evidence-Based Outcomes</h3>
                         <p class="text-gray-600 text-sm leading-relaxed">
                             Committed to measurable progress and positive functional outcomes for every child.
                         </p>
