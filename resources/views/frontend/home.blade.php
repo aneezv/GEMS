@@ -8,8 +8,12 @@
         {{-- ================= HERO SECTION ================= --}}
         @push('head')
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-            <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&display=swap"
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
                 rel="stylesheet">
+            
+            {{-- LCP Image Preload --}}
+            <link rel="preload" as="image" href="{{ asset('images/image9.jpg') }}" media="(max-width: 1023px)">
+            <link rel="preload" as="image" href="{{ asset('images/image7.jpg') }}" media="(min-width: 1024px)">
             <style>
                 :root {
                     --primary-teal: #006684;
@@ -986,7 +990,7 @@
                                     <div class="lg:hidden flex flex-col items-center">
                                         <div class="mobile-hero-image-container">
                                             <div class="mobile-organic-circle">
-                                                <img src="{{ asset('images/image9.jpg') }}" alt="Wellness" fetchpriority="high">
+                                                <img src="{{ asset('images/image9.jpg') }}" alt="Wellness" fetchpriority="high" width="400" height="400">
                                             </div>
                                         </div>
 
@@ -1023,7 +1027,7 @@
                                 <div class="organic-shape-container hidden lg:block">
                                     <div class="organic-image-mask">
                                         <img src="{{ asset('images/image7.jpg') }}" class="w-full h-full object-cover"
-                                            alt="Wellness Experience" fetchpriority="high">
+                                            alt="Wellness Experience" fetchpriority="high" width="800" height="600">
                                     </div>
                                 </div>
 
@@ -1077,7 +1081,7 @@
                                     <div class="lg:hidden flex flex-col items-center">
                                         <div class="mobile-hero-image-container">
                                             <div class="mobile-organic-circle">
-                                                <img loading="lazy" decoding="async" src="{{ asset('images/image8.jpg') }}" alt="Expert Guidance">
+                                                <img loading="lazy" decoding="async" src="{{ asset('images/image8.jpg') }}" alt="Expert Guidance" width="400" height="400">
                                             </div>
                                         </div>
 
@@ -1117,7 +1121,7 @@
                                 <div class="organic-shape-container hidden lg:block">
                                     <div class="organic-image-mask">
                                         <img loading="lazy" decoding="async" src="{{ asset('images/image6.jpg') }}" class="w-full h-full object-cover"
-                                            alt="Expert Care">
+                                            alt="Expert Care" width="800" height="600">
                                     </div>
                                 </div>
 
@@ -1159,7 +1163,7 @@
                                     <div class="lg:hidden flex flex-col items-center">
                                         <div class="mobile-hero-image-container">
                                             <div class="mobile-organic-circle">
-                                                <img loading="lazy" decoding="async" src="{{ asset('images/image10.png') }}" alt="Growth Journey">
+                                                <img loading="lazy" decoding="async" src="{{ asset('images/image10.png') }}" alt="Growth Journey" width="400" height="400">
                                             </div>
                                         </div>
 
@@ -1199,7 +1203,7 @@
                                 <div class="organic-shape-container hidden lg:block">
                                     <div class="organic-image-mask">
                                         <img loading="lazy" decoding="async" src="{{ asset('images/image4.jpg') }}" class="w-full h-full object-cover"
-                                            alt="Child Development Care">
+                                            alt="Child Development Care" width="800" height="600">
                                     </div>
                                 </div>
 
@@ -2731,27 +2735,27 @@
             {{-- FAQPage Structured Data (E-E-A-T) --}}
             <script type="application/ld+json">
             {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
+              "@@context": "https://schema.org",
+              "@@type": "FAQPage",
               "mainEntity": [{
-                "@type": "Question",
+                "@@type": "Question",
                 "name": "How do I know if my child needs therapy?",
                 "acceptedAnswer": {
-                  "@type": "Answer",
+                  "@@type": "Answer",
                   "text": "If you notice delays in speech, motor skills, social interaction, or behavior compared to other children of the same age, it's best to consult a professional. Early intervention yields the best results."
                 }
               }, {
-                "@type": "Question",
+                "@@type": "Question",
                 "name": "Do you offer online consultations?",
                 "acceptedAnswer": {
-                  "@type": "Answer",
+                  "@@type": "Answer",
                   "text": "Yes, we offer tele-therapy and online parent counseling sessions for families who cannot visit our center physically."
                 }
               }, {
-                "@type": "Question",
+                "@@type": "Question",
                 "name": "What ages do you treat?",
                 "acceptedAnswer": {
-                  "@type": "Answer",
+                  "@@type": "Answer",
                   "text": "We work with children from infancy (Early Intervention) up to adolescence (18 years), providing age-appropriate therapies and support."
                 }
               }]

@@ -4,7 +4,7 @@
 
             <div class="flex items-center flex-shrink-0">
                 <a href="/" class="group block">
-                    <img src="{{ asset('images/Logo.png') }}" alt="GEMS Logo"
+                    <img src="{{ asset('images/Logo.png') }}" alt="GEMS Logo" width="160" height="60"
                         class="h-10 sm:h-12 lg:h-15 w-auto object-contain transition-all duration-300 group-hover:scale-105"
                         style="image-rendering: -webkit-optimize-contrast; will-change: transform;">
                 </a>
