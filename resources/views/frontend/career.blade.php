@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Careers | GEMS')
+@section('title', 'Careers in Pediatric Healthcare | GEMS CDC Kozhikode')
 @section('meta_description', 'Build a rewarding career in child healthcare with GEMS in Kozhikode, Kerala. Openings for speech therapists, occupational therapists, and special educators.')
 
 @section('content')
@@ -155,4 +155,19 @@
             </div>
         </div>
     </section>
+
+    {-- Breadcrumb Schema --}
+    @push('head')
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+        { "@type": "ListItem", "position": 2, "name": "Careers", "item": "{{ url('/career') }}" }
+      ]
+    }
+    </script>
+    @endpush
+
 @endsection

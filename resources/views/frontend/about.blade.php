@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About Us | GEMS')
+@section('title', 'About GEMS CDC | Leading Child Development Centre in Kozhikode')
 @section('meta_description', 'Learn about GEMS Child Development Centre in Kozhikode, Kerala. Our multidisciplinary team brings 10+ years of clinical excellence in pediatric child care.')
 
 @section('content')
@@ -392,5 +392,20 @@
             </svg>
         </div>
     </section>
+
+    {-- Breadcrumb Schema --}
+    @push('head')
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+        { "@type": "ListItem", "position": 2, "name": "About Us", "item": "{{ url('/about') }}" }
+      ]
+    }
+    </script>
+    @endpush
+
 @endsection
 

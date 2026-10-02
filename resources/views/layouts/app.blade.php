@@ -13,7 +13,11 @@
         content="@yield('meta_description', 'GEMS Child Development Centre in Kozhikode, Kerala offers expert pediatric therapies, autism support, speech & occupational therapy. Empowering children.')">
     <meta name="keywords"
         content="child development centre kozhikode, autism therapy calicut, speech therapy, occupational therapy, special education, pediatric therapy kerala, GEMS CDC">
-    <meta name="author" content="GEMS Child Development Centre">
+        <meta name="author" content="GEMS Child Development Centre">
+    <meta name="geo.region" content="IN-KL">
+    <meta name="geo.placename" content="Kozhikode">
+    <meta name="geo.position" content="11.287588;75.790630">
+    <meta name="ICBM" content="11.287588, 75.790630">
     <meta name="robots" content="@yield('robots', 'index, follow')">
     <link rel="canonical" href="@yield('canonical', url()->current())">
 

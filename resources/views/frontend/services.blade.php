@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Our Services | GEMS')
+@section('title', 'Pediatric Therapies & Development Services | GEMS Kozhikode')
 @section('meta_description', 'Explore specialized pediatric therapy services at GEMS Kozhikode, Kerala: Speech Therapy, Occupational Therapy, Behavioral Therapy, and Special Education.')
 
 @section('content')
@@ -279,5 +279,20 @@
     }
     </script>
     @endpush
+
+    {-- Breadcrumb Schema --}
+    @push('head')
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+        { "@type": "ListItem", "position": 2, "name": "Our Services", "item": "{{ url('/services') }}" }
+      ]
+    }
+    </script>
+    @endpush
+
 @endsection
 

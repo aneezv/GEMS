@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Our Team | GEMS Child Development Centre')
+@section('title', 'Pediatric Specialists & Therapy Team | GEMS CDC Kozhikode')
 @section('meta_description', 'Meet the certified pediatric specialists and developmental therapists at GEMS Kozhikode, Kerala dedicated to guiding children with personalized care plans.')
 
 @section('content')
@@ -328,6 +328,77 @@
     }
     </script>
     @endpush
+
+    {-- Breadcrumb Schema --}
+    @push('head')
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+        { "@type": "ListItem", "position": 2, "name": "Our Team", "item": "{{ url('/team') }}" }
+      ]
+    }
+    </script>
+    @endpush
+
+
+    {{-- Medical Practitioner Schema (E-E-A-T) --}}
+    @push('head')
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Physician",
+          "name": "Mushtaq Parapparakkal",
+          "jobTitle": "Founder & CEO, Psychologist",
+          "hasCredential": "CRR No: A68882",
+          "alumniOf": "M.Sc, M.Phil Psy",
+          "worksFor": { "@type": "MedicalClinic", "name": "GEMS Child Development Centre" },
+          "sameAs": "https://www.linkedin.com/in/mushthaq-parapparakkal-b5591b1a8/"
+        },
+        {
+          "@type": "Physician",
+          "name": "Narmada Soman",
+          "jobTitle": "Consultant Psychologist",
+          "alumniOf": "M.Sc Psychology",
+          "worksFor": { "@type": "MedicalClinic", "name": "GEMS Child Development Centre" }
+        },
+        {
+          "@type": "Physician",
+          "name": "Manjima K.",
+          "jobTitle": "Audiologist & Speech Language Pathologist",
+          "hasCredential": "BASLP, OPT Level 1",
+          "worksFor": { "@type": "MedicalClinic", "name": "GEMS Child Development Centre" }
+        },
+        {
+          "@type": "Physician",
+          "name": "Prarthana P.P",
+          "jobTitle": "Consultant Psychologist",
+          "alumniOf": "M.Sc Psychology",
+          "worksFor": { "@type": "MedicalClinic", "name": "GEMS Child Development Centre" }
+        },
+        {
+          "@type": "Physician",
+          "name": "Malavika K.",
+          "jobTitle": "Special Educator",
+          "alumniOf": "BA Special Education ID",
+          "worksFor": { "@type": "MedicalClinic", "name": "GEMS Child Development Centre" }
+        },
+        {
+          "@type": "Physician",
+          "name": "Thara K.K",
+          "jobTitle": "Clinical Coordinator",
+          "alumniOf": "MSW Medical and Psychiatry",
+          "worksFor": { "@type": "MedicalClinic", "name": "GEMS Child Development Centre" }
+        }
+      ]
+    }
+    </script>
+    @endpush
+
 @endsection
 
 

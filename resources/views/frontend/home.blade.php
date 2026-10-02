@@ -984,7 +984,7 @@
                                 <div class="z-20 text-center lg:text-left relative w-full lg:relative">
                                     
                                     {{-- Single SEO-Optimized H1 for Google (Visually Hidden) --}}
-                                    <h1 class="sr-only">GEMS Child Development Centre in Kozhikode, Kerala</h1>
+                                    
 
                                     {{-- Mobile optimized layout content --}}
                                     <div class="lg:hidden flex flex-col items-center">
@@ -996,7 +996,7 @@
 
                                         <div class="mobile-content-card">
                                             <span class="mobile-subheading">Welcome to GEMS</span>
-                                            <h2 class="hero-title">Child Development Centre Kozhikode</h2>
+                                            <h1 class="hero-title">Child Development Centre Kozhikode</h1>
                                             <p class="hero-description">
                                                 Our center is designed to be a safe, caring, and hopeful environment where every
                                                 child's unique potential is recognized and nurtured.
@@ -1008,9 +1008,9 @@
 
                                     {{-- Desktop layout --}}
                                     <div class="hidden lg:block">
-                                        <h2 class="hero-title text-4xl lg:text-6xl mb-8">
+                                        <h1 class="hero-title text-4xl lg:text-6xl mb-8">
                                             Child Development Centre in Kozhikode, Kerala
-                                        </h2>
+                                        </h1>
 
                                         <p
                                             class="hero-description text-gray-600 text-lg lg:text-xl leading-relaxed mb-10 max-w-lg">
