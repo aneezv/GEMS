@@ -59,6 +59,14 @@
                         <div>
                             <h3 class="text-3xl font-bold text-gray-900 mb-1">Mushtaq</h3>
                             <p class="text-teal-600 font-bold uppercase tracking-wider text-sm">Founder & CEO</p>
+                            <div class="mt-2 flex flex-wrap items-center gap-2">
+                                <span class="inline-flex items-center px-3 py-1 bg-teal-50 text-teal-800 rounded-full text-xs font-semibold border border-teal-100">
+                                    M.Sc, M.Phil Psy.
+                                </span>
+                                <span class="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-semibold border border-gray-200">
+                                    CRR No: A68882
+                                </span>
+                            </div>
                         </div>
                         <p class="text-gray-600 leading-relaxed text-lg italic">
                             "Our mission is to create a world where every child, regardless of their challenges, can
@@ -278,6 +286,7 @@
           "@@type": "Person",
           "name": "Mushthaq",
           "jobTitle": "Founder & CEO",
+          "description": "M.Sc, M.Phil Psy., CRR No: A68882",
           "worksFor": { "@@type": "MedicalOrganization", "name": "GEMS Child Development Centre" }
         },
         {

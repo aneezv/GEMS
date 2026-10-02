@@ -2327,27 +2327,47 @@
                     </div>
                 </div>
 
+                @php
+                    $googleReviewsUrl = 'https://www.google.com/search?q=Gems+Child+Development+Center&kgmid=/g/11wxfgmcpv#lrd=0x3ba65fe3158412d9:0xad8f1c9ae3bb1ea,1';
+                @endphp
+
                 <!-- Google Reviews Widget Layout -->
                 <div class="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16 w-full" data-aos="fade-up"
                     data-aos-delay="100">
 
                     {{-- Left: Google Summary --}}
                     <div class="flex flex-col items-center justify-center text-center w-full lg:w-1/4 shrink-0">
-                        <h3 class="text-2xl font-bold text-[#202124] tracking-wide mb-3"
+                        <h3 class="text-2xl font-bold text-[#202124] tracking-wide mb-2"
                             style="font-family: Arial, sans-serif;">EXCELLENT</h3>
-                        <div class="flex gap-1 mb-3">
-                            @for($i = 0; $i < 5; $i++)
-                                <svg viewBox="0 0 24 24" fill="#FBBC04" class="w-8 h-8">
-                                    <path
-                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg>
-                            @endfor
+                        <div class="flex items-center justify-center gap-1.5 mb-2">
+                            <span class="text-2xl font-bold text-[#202124]" style="font-family: Arial, sans-serif;">4.9</span>
+                            <div class="flex gap-0.5">
+                                @for($i = 0; $i < 5; $i++)
+                                    <svg viewBox="0 0 24 24" fill="#FBBC04" class="w-6 h-6">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                @endfor
+                            </div>
                         </div>
-                        <p class="text-[15px] text-[#5f6368] mb-5 font-medium" style="font-family: Arial, sans-serif;">Based on
-                            <span class="font-bold text-[#202124]">72 reviews</span>
+                        <p class="text-[15px] text-[#5f6368] mb-4 font-medium" style="font-family: Arial, sans-serif;">Based on
+                            <a href="{{ $googleReviewsUrl }}" target="_blank" rel="noopener noreferrer" class="font-bold text-[#202124] hover:text-[#1a73e8] underline decoration-dotted">
+                                53 reviews
+                            </a>
                         </p>
-                        <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" width="100" height="32"
-                            class="h-8">
+                        <a href="{{ $googleReviewsUrl }}" target="_blank" rel="noopener noreferrer" class="inline-block transition-transform hover:scale-105" title="View GEMS on Google">
+                            <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" width="100" height="32"
+                                class="h-8">
+                        </a>
+                        <a href="{{ $googleReviewsUrl }}"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="mt-4 inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#1a73e8] hover:text-[#1557b0] transition-colors group">
+                            <span>Read reviews on Google</span>
+                            <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
                     </div>
 
                     {{-- Right: Cards Carousel/Grid --}}
@@ -2371,167 +2391,95 @@
                         <div id="reviews-container"
                             class="flex overflow-x-auto gap-4 lg:gap-6 snap-x snap-mandatory pb-6 hide-scrollbar cursor-grab active:cursor-grabbing w-full scroll-smooth">
 
-                            {{-- Card 1 --}}
-                            <div
-                                class="bg-[#f8f9fa] rounded-[16px] p-6 shrink-0 w-[85%] sm:w-[320px] lg:w-[calc(100%/3-1rem)] snap-center text-left border border-gray-50 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-shadow">
-                                <div class="flex justify-between items-start mb-4">
-                                    <div class="flex items-center gap-3">
-                                        <div
-                                            class="w-10 h-10 rounded-full bg-[#388e3c] flex items-center justify-center text-white font-bold text-lg">
-                                            H</div>
-                                        <div>
-                                            <div class="font-bold text-[#202124] text-[15px] leading-tight font-sans">Hasna Kp
+                            @php $avatarColors = ['#388e3c', '#1976d2', '#fbc02d', '#d32f2f', '#7b1fa2']; @endphp
+
+                            @if($reviews->count() > 0)
+                                @foreach($reviews as $index => $review)
+                                <div
+                                    class="bg-[#f8f9fa] rounded-[16px] p-6 shrink-0 w-[85%] sm:w-[320px] lg:w-[calc(100%/3-1rem)] snap-center text-left border border-gray-50 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-shadow">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg"
+                                                style="background-color: {{ $avatarColors[$index % count($avatarColors)] }}">
+                                                {{ $review->initial }}</div>
+                                            <div>
+                                                <div class="font-bold text-[#202124] text-[15px] leading-tight font-sans">{{ $review->reviewer_name }}</div>
+                                                <div class="text-[#5f6368] text-[13px] mt-0.5 font-sans">{{ $review->review_date->format('Y-m-d') }}</div>
                                             </div>
-                                            <div class="text-[#5f6368] text-[13px] mt-0.5 font-sans">2024-08-12</div>
                                         </div>
+                                        <a href="{{ $googleReviewsUrl }}" target="_blank" rel="noopener noreferrer" title="View on Google" class="transition-transform hover:scale-110">
+                                            <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                                alt="Google" width="20" height="20" class="w-5 h-5 mt-1">
+                                        </a>
                                     </div>
-                                    <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                        alt="Google" width="20" height="20" class="w-5 h-5 mt-1">
-                                </div>
-                                <div class="flex items-center gap-1 mb-3">
-                                    <div class="flex gap-0.5">
-                                        @for($i = 0; $i < 5; $i++)
-                                            <svg viewBox="0 0 24 24" fill="#FBBC04" class="w-4 h-4">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                        @endfor
-                                    </div>
-                                    <svg class="w-4 h-4 text-[#1a73e8] ml-1" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.8 14.6L6 12.4l1.4-1.4 2.8 2.8 6.4-7.8 1.4 1.4-7.8 9.2z" />
-                                    </svg>
-                                </div>
-                                <p class="text-[#3c4043] text-[14px] leading-[1.6] line-clamp-4 font-sans">
-                                    We are extremely happy with the therapy services provide by gems clinic. We have seen a
-                                    remarkable improvement in our child over time. He has started trying to speak, his
-                                    hyperactivity has reduced significantly, and his eye contact with people has improved a lot
-                                </p>
-                                <a href="javascript:void(0)"
-                                    class="text-[#5f6368] hover:text-gray-900 text-[13px] mt-2 inline-block font-sans">Read
-                                    more</a>
-                            </div>
-
-                            {{-- Card 2 --}}
-                            <div
-                                class="bg-[#f8f9fa] rounded-[16px] p-6 shrink-0 w-[85%] sm:w-[320px] lg:w-[calc(100%/3-1rem)] snap-center text-left border border-gray-50 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-shadow">
-                                <div class="flex justify-between items-start mb-4">
-                                    <div class="flex items-center gap-3">
-                                        <div
-                                            class="w-10 h-10 rounded-full bg-[#1976d2] flex items-center justify-center text-white font-bold text-lg">
-                                            F</div>
-                                        <div>
-                                            <div class="font-bold text-[#202124] text-[15px] leading-tight font-sans">Fathima
-                                                va.</div>
-                                            <div class="text-[#5f6368] text-[13px] mt-0.5 font-sans">2024-11-04</div>
+                                    <div class="flex items-center gap-1 mb-3">
+                                        <div class="flex gap-0.5">
+                                            @for($s = 0; $s < $review->rating; $s++)
+                                                <svg viewBox="0 0 24 24" fill="#FBBC04" class="w-4 h-4">
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                </svg>
+                                            @endfor
+                                            @for($s = $review->rating; $s < 5; $s++)
+                                                <svg viewBox="0 0 24 24" fill="#dadce0" class="w-4 h-4">
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                </svg>
+                                            @endfor
                                         </div>
+                                        <svg class="w-4 h-4 text-[#1a73e8] ml-1" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.8 14.6L6 12.4l1.4-1.4 2.8 2.8 6.4-7.8 1.4 1.4-7.8 9.2z" />
+                                        </svg>
                                     </div>
-                                    <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                        alt="Google" width="20" height="20" class="w-5 h-5 mt-1">
+                                    <p class="text-[#3c4043] text-[14px] leading-[1.6] line-clamp-4 font-sans">
+                                        {{ $review->review_text }}
+                                    </p>
                                 </div>
-                                <div class="flex items-center gap-1 mb-3">
-                                    <div class="flex gap-0.5">
-                                        @for($i = 0; $i < 5; $i++)
-                                            <svg viewBox="0 0 24 24" fill="#FBBC04" class="w-4 h-4">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                        @endfor
-                                    </div>
-                                    <svg class="w-4 h-4 text-[#1a73e8] ml-1" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.8 14.6L6 12.4l1.4-1.4 2.8 2.8 6.4-7.8 1.4 1.4-7.8 9.2z" />
-                                    </svg>
-                                </div>
-                                <p class="text-[#3c4043] text-[14px] leading-[1.6] line-clamp-4 font-sans">
-                                    One of the best child development centres in Calicut! Only after reaching here did I truly
-                                    feel that my son has received the right guidance and support. The staff are very
-                                    professional, caring, and patient.
-                                </p>
-                                <a href="javascript:void(0)"
-                                    class="text-[#5f6368] hover:text-gray-900 text-[13px] mt-2 inline-block font-sans">Read
-                                    more</a>
-                            </div>
-
-                            {{-- Card 3 --}}
-                            <div
-                                class="bg-[#f8f9fa] rounded-[16px] p-6 shrink-0 w-[85%] sm:w-[320px] lg:w-[calc(100%/3-1rem)] snap-center text-left border border-gray-50 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-shadow">
-                                <div class="flex justify-between items-start mb-4">
-                                    <div class="flex items-center gap-3">
-                                        <div
-                                            class="w-10 h-10 rounded-full bg-[#fbc02d] flex items-center justify-center text-white font-bold text-lg">
-                                            A</div>
-                                        <div>
-                                            <div class="font-bold text-[#202124] text-[15px] leading-tight font-sans">Aneesh
-                                                meladath.</div>
-                                            <div class="text-[#5f6368] text-[13px] mt-0.5 font-sans">2025-01-15</div>
-                                        </div>
-                                    </div>
-                                    <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                        alt="Google" width="20" height="20" class="w-5 h-5 mt-1">
-                                </div>
-                                <div class="flex items-center gap-1 mb-3">
-                                    <div class="flex gap-0.5">
-                                        @for($i = 0; $i < 5; $i++)
-                                            <svg viewBox="0 0 24 24" fill="#FBBC04" class="w-4 h-4">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                        @endfor
-                                    </div>
-                                    <svg class="w-4 h-4 text-[#1a73e8] ml-1" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.8 14.6L6 12.4l1.4-1.4 2.8 2.8 6.4-7.8 1.4 1.4-7.8 9.2z" />
-                                    </svg>
-                                </div>
-                                <p class="text-[#3c4043] text-[14px] leading-[1.6] line-clamp-4 font-sans">
-                                    The best therapy centre for developmental delayed kids. Excellent teaching and skill
-                                    development methods using Kids are very happy because of friendly atmosphere.
-                                </p>
-                                <a href="javascript:void(0)"
-                                    class="text-[#5f6368] hover:text-gray-900 text-[13px] mt-2 inline-block font-sans">Read
-                                    more</a>
-                            </div>
-
-                            {{-- Card 4 --}}
-                            <div
-                                class="bg-[#f8f9fa] rounded-[16px] p-6 shrink-0 w-[85%] sm:w-[320px] lg:w-[calc(100%/3-1rem)] snap-center text-left border border-gray-50 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-shadow">
-                                <div class="flex justify-between items-start mb-4">
-                                    <div class="flex items-center gap-3">
-                                        <div
-                                            class="w-10 h-10 rounded-full bg-[#d32f2f] flex items-center justify-center text-white font-bold text-lg">
-                                            R</div>
-                                        <div>
-                                            <div class="font-bold text-[#202124] text-[15px] leading-tight font-sans">Rahul K.
+                                @endforeach
+                            @else
+                                {{-- Fallback: hardcoded reviews shown until admin adds DB entries --}}
+                                @php
+                                    $fallbackReviews = [
+                                        ['name' => 'Hasna Kp', 'color' => '#388e3c', 'date' => '2024-08-12', 'text' => 'We are extremely happy with the therapy services provide by gems clinic. We have seen a remarkable improvement in our child over time. He has started trying to speak, his hyperactivity has reduced significantly, and his eye contact with people has improved a lot'],
+                                        ['name' => 'Fathima va.', 'color' => '#1976d2', 'date' => '2024-11-04', 'text' => 'One of the best child development centres in Calicut! Only after reaching here did I truly feel that my son has received the right guidance and support. The staff are very professional, caring, and patient.'],
+                                        ['name' => 'Aneesh meladath.', 'color' => '#fbc02d', 'date' => '2025-01-15', 'text' => 'The best therapy centre for developmental delayed kids. Excellent teaching and skill development methods using Kids are very happy because of friendly atmosphere.'],
+                                        ['name' => 'Rahul K.', 'color' => '#d32f2f', 'date' => '2025-02-28', 'text' => "Truly grateful for the progress we've seen. The staff is like family. They've supported us as much as they've supported our son. Excellent environment."],
+                                    ];
+                                @endphp
+                                @foreach($fallbackReviews as $fb)
+                                <div
+                                    class="bg-[#f8f9fa] rounded-[16px] p-6 shrink-0 w-[85%] sm:w-[320px] lg:w-[calc(100%/3-1rem)] snap-center text-left border border-gray-50 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-shadow">
+                                    <div class="flex justify-between items-start mb-4">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg"
+                                                style="background-color: {{ $fb['color'] }}">
+                                                {{ mb_strtoupper(mb_substr($fb['name'], 0, 1)) }}</div>
+                                            <div>
+                                                <div class="font-bold text-[#202124] text-[15px] leading-tight font-sans">{{ $fb['name'] }}</div>
+                                                <div class="text-[#5f6368] text-[13px] mt-0.5 font-sans">{{ $fb['date'] }}</div>
                                             </div>
-                                            <div class="text-[#5f6368] text-[13px] mt-0.5 font-sans">2025-02-28</div>
                                         </div>
+                                        <a href="{{ $googleReviewsUrl }}" target="_blank" rel="noopener noreferrer" title="View on Google" class="transition-transform hover:scale-110">
+                                            <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                                alt="Google" width="20" height="20" class="w-5 h-5 mt-1">
+                                        </a>
                                     </div>
-                                    <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                        alt="Google" width="20" height="20" class="w-5 h-5 mt-1">
-                                </div>
-                                <div class="flex items-center gap-1 mb-3">
-                                    <div class="flex gap-0.5">
-                                        @for($i = 0; $i < 5; $i++)
-                                            <svg viewBox="0 0 24 24" fill="#FBBC04" class="w-4 h-4">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                        @endfor
+                                    <div class="flex items-center gap-1 mb-3">
+                                        <div class="flex gap-0.5">
+                                            @for($i = 0; $i < 5; $i++)
+                                                <svg viewBox="0 0 24 24" fill="#FBBC04" class="w-4 h-4">
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                </svg>
+                                            @endfor
+                                        </div>
+                                        <svg class="w-4 h-4 text-[#1a73e8] ml-1" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.8 14.6L6 12.4l1.4-1.4 2.8 2.8 6.4-7.8 1.4 1.4-7.8 9.2z" />
+                                        </svg>
                                     </div>
-                                    <svg class="w-4 h-4 text-[#1a73e8] ml-1" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.8 14.6L6 12.4l1.4-1.4 2.8 2.8 6.4-7.8 1.4 1.4-7.8 9.2z" />
-                                    </svg>
+                                    <p class="text-[#3c4043] text-[14px] leading-[1.6] line-clamp-4 font-sans">
+                                        {{ $fb['text'] }}
+                                    </p>
                                 </div>
-                                <p class="text-[#3c4043] text-[14px] leading-[1.6] line-clamp-4 font-sans">
-                                    Truly grateful for the progress we've seen. The staff is like family. They've supported us
-                                    as much as they've supported our son. Excellent environment.
-                                </p>
-                                <a href="javascript:void(0)"
-                                    class="text-[#5f6368] hover:text-gray-900 text-[13px] mt-2 inline-block font-sans">Read
-                                    more</a>
-                            </div>
+                                @endforeach
+                            @endif
 
                         </div>
                     </div>

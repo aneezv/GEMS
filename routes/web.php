@@ -67,6 +67,8 @@ Route::middleware(['auth', \App\Http\Middleware\AdminMiddleware::class])->prefix
     Route::get('/contacts', [\App\Http\Controllers\Admin\AdminContactController::class, 'index'])->name('contacts.index');
     Route::get('/contacts/{contact}', [\App\Http\Controllers\Admin\AdminContactController::class, 'show'])->name('contacts.show');
     Route::delete('/contacts/{contact}', [\App\Http\Controllers\Admin\AdminContactController::class, 'destroy'])->name('contacts.destroy');
+
+    Route::resource('reviews', \App\Http\Controllers\Admin\ReviewController::class)->except(['show']);
 });
 // ADMIN
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
