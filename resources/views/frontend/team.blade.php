@@ -329,11 +329,11 @@
     </script>
     @endpush
 
-    {-- Breadcrumb Schema --}
+    {{-- Breadcrumb Schema --}}
     @push('head')
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+      "@@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
@@ -348,7 +348,7 @@
     @push('head')
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+      "@@context": "https://schema.org",
       "@graph": [
         {
           "@type": "Physician",
